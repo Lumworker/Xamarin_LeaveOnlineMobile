@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeaveOnlineMobile.Master"
+             Title="Menu"
+             Icon="menu.png">
+    <ContentPage.Content>
+        <Frame Margin="20">
+            <StackLayout Orientation="Vertical">
+                <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="24" Margin="10" TextColor="#337ab7"
+                       Text="Leave Online Menu"></Label>
+                <Button Text="My Task" TextColor="#787878" FontSize="20" x:Name="MyTask"
+                             Margin="5" BorderColor="Transparent" BackgroundColor="Transparent"
+                             Clicked="Button_MyTask" ></Button>
+                <Button Text="History" TextColor="#787878" FontSize="20" x:Name="History"
+                             Margin="5" BorderColor="Transparent" BackgroundColor="Transparent"
+                        Clicked="Button_History" ></Button>
+                <Button Text="Request" TextColor="#787878" FontSize="20" x:Name="Request"
+                             Margin="5" BorderColor="Transparent" BackgroundColor="Transparent"
+                        Clicked="Button_Request" ></Button>
+                <Button Text="Cancel Request" TextColor="#787878" FontSize="20" x:Name="CancelRequest"
+                             Margin="5" BorderColor="Transparent" BackgroundColor="Transparent"
+                        Clicked="Button_Cancel" ></Button>
+                <Button Text="Log-out" TextColor="#bf0a0a" FontSize="20" x:Name="LogOut"
+                             Margin="5" BorderColor="Transparent" BackgroundColor="Transparent"
+                        Clicked="Button_Logout" ></Button>
+                <!--<Button Text="Close" TextColor="Black" Clicked="Close_Modal"></Button>-->
+            </StackLayout>
+        </Frame>
+        
+    </ContentPage.Content>
+</ContentPage>

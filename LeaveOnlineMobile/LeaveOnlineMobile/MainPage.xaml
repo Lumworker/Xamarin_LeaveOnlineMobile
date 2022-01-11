@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LeaveOnlineMobile"
+             x:Class="LeaveOnlineMobile.MainPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="40">
+        <Label HorizontalOptions="Center" FontSize="36" Text="Leave Online"></Label>
+        <!--<Image Source="{local:ImageResource LeaveOnlineMobile.Images.logo.gif}" WidthRequest="150" HeightRequest="150" />-->
+        <Image Source="logo.gif" WidthRequest="130" HeightRequest="130" />
+        <Frame BackgroundColor="#FFF" HasShadow="False" WidthRequest="200">
+            <StackLayout Orientation="Vertical" Spacing="10">
+                <Entry x:Name="EmpNum" Text="{Binding Email}" Placeholder="EmpNum/รหัสพนักงาน"   
+                           PlaceholderColor="Gray" HeightRequest="40" 
+                           Keyboard="Numeric" MaxLength="5"/>
+                <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Pass/รหัสผ่าน"   
+                           PlaceholderColor="Gray" HeightRequest="40"   
+                           IsPassword="True" MaxLength="6"
+                           Keyboard="Numeric"/>
+            </StackLayout>
+        </Frame>
+        <!--<Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text=" to view AppCenter documentation." />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>-->
+
+
+
+        <Button Command="{Binding SubmitCommand}" Text="Login/เข้าสู่ระบบ" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#337ab7" Clicked="Button_Clicked" />
+        <Button Text="Resetpassword/เปลี่ยนรหัสผ่าน" TextColor="Blue"  WidthRequest="100" 
+                    BorderColor="Transparent"
+                    BackgroundColor="Transparent"
+                    Clicked="Resetpassword" ></Button>
+        <!--<Button Text="TEST" TextColor="Blue"  WidthRequest="100" 
+                    Clicked="Button_Clicked_1" ></Button>-->
+
+    </StackLayout>
+
+</ContentPage>

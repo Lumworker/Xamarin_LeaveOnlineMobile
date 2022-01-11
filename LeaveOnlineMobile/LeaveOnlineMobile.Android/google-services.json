@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "556460808326",
+    "firebase_url": "https://leaveonline-notification.firebaseio.com",
+    "project_id": "leaveonline-notification",
+    "storage_bucket": "leaveonline-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556460808326:android:af2c1041e7868755cf5907",
+        "android_client_info": {
+          "package_name": "com.companyname.LeaveOnlineMobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556460808326-76s55dba0gi0m7sm5aqr479l895etikd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlnFUfW7lfmCIqabDjqrFIiMnTBSXi_k8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556460808326-76s55dba0gi0m7sm5aqr479l895etikd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
